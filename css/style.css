@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+@import "main.css";
+@import "window.css";
+
+@import "reset.css";
+
+
+/* .btn {
+    width: 50px;
+    height: 20px;
+} */
+
+.hidden {
+    display: none;
+}
+
+body{
+    width: 1200px;
+    height: 650px;
+    margin: 30px auto;
+    background-color: rgb(233, 239, 219);
+	position: relative;
+    filter: var(--shad);
+
+    /* border: 5px solid black; */
+}
+
+
+.main__whatsname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.welcome_name {
+    border: none;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 3px solid black;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.welcome_btn {
+    width: 300px;
+    height: 70px;
+    margin: 20px 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 5px solid black;
+}
+
+
+.whatsname {
+    width: 50%;
+	margin: 0px auto;
+}
+.whatsname img{
+    width: 600px;
+}
+.whatsname_text {
+    position: absolute;
+    font-size: 40px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sigmar', cursive;
+    color: rgb(245, 92, 75);
+}
+
+.welcome_btn:hover {
+    animation: bigger 1s ease;
+}
+
+@keyframes bigger {
+    20% {
+        transform: scale(1.2);
+
+    }
+    50% {
+        transform: none;
+    }
+}
+

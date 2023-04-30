@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@300;400&family=Rubik:wght@400;500&display=swap');
+/* 
+font-family: 'Indie Flower', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+@import "style.css";
+@import "window.css";
+
+@import "reset.css";
+
+
+.name_tag {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    /* background-image: url("img/flower.jpg"); */
+    background-size: 100%;
+    border-radius: 30px;
+    border: 2px solid rgba(10, 53, 11, 0.467);
+    padding: 15px;
+    margin: 10px;
+    font-family: Rubik;
+}
+
+
+/* 메인화면 바탕 */
+.contain{
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 650px;
+}
+.contain__back {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    position: absolute;
+}
+
+/* 모니터 화면 */
+.monitor {
+    position: absolute;
+    /* background-color: black; */
+    width: 401px;
+    height: 225px;
+    bottom: 194px;
+    left: 49px;
+    /* overflow: hidden; */
+}
+
+#clock {
+    padding: 3px 10px;
+    font-size: 13px;
+    background-color: rgba(79, 240, 120, 0.333);
+    color: rgba(0, 0, 0, 0.652);
+    text-align: end;
+    margin-top: 50px;
+}
+
+.monitor_bac {
+    
+    overflow: hidden;
+}
+.ee {
+    position: absolute;
+    bottom: 194px;
+    left: 49px;
+    width: 401px;
+    height: 225px;
+}
+
+.monitor_img {
+    position: absolute;
+    width: 500px;
+    bottom: -10px;
+    left: 0%;
+    filter: var(--shad);
+    z-index: -1;
+}
+/* 투두 리스트 */
+.todolist {
+    position: relative;
+    width: 180px;
+    height: 220px;
+
+    left: 850px;
+    top: 100px;
+    background-color: rgb(237, 230, 177);
+    border-radius: 5px;
+    filter: var(--shad);
+}
+.todolist p {
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(231, 136, 35);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Indie Flower;
+}
+#todo-form input {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    /* border-bottom: 2px solid rgb(242, 157, 39); */
+    padding: 10px 10px;
+}
+
+
+.todo_textline {
+    display: flex;
+    width: 200px;
+    padding: 0px 10px;
+}
+
+.todo_text {
+    display: block;
+    padding: 5px ;
+    font-size: 15px;
+    font-family: Indie Flower;
+}
+.todo_btn {
+    display: block;
+    align-items: flex-end;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+
+/* 벽 꾸미기 */
+
+.photo1 img {
+    position: absolute;
+    filter: var(--shad);
+    left: 680px;
+    top: 90px;
+    width: 130px;
+    height: 150px;
+    border-radius: 5px;
+}
+.photo2 img {
+    position: absolute;
+    left: 1050px;
+    top: 220px;
+    filter: var(--shad);
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+}
+.photo3 img {
+    position: absolute;
+    left: 730px;
+    top: 260px;
+    filter: var(--shad);
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* 왼쪽 페이지 */
+.left_page {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.fa-circle-arrow-left {
+    color: transparent;
+    /* color: black; */
+}
+.fa-circle-arrow-left:hover {
+    color: rgba(0, 0, 0, 0.429);
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* .back {
+    width: 1200px;
+    height: 650p;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+ */
+
+
+
+#weather {
+    font-family: Lato;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+#weather div {
+    padding-bottom: 15px;
+}

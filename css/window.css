@@ -1,0 +1,68 @@
+@import "style.css";
+@import "main.css";
+
+@import "reset.css";
+
+
+.contain{
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 650px;
+}
+
+.window_out {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    /* background-color: rgba(0, 0, 0, 0.184); */
+    top: 75px;
+    left: 245px;
+    border-radius: 140px 140px 0px 0px;
+    overflow: hidden;
+}
+.window_out img {
+    width: 300px;
+}
+.eee {
+    z-index: 2;
+}
+
+
+.window__back {
+    position: absolute;
+    width: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.window1 {
+    position: absolute;
+    width: 400px;
+    top: 60px;
+    left: 200px;
+    height: auto;
+    filter: var(--shad);
+    z-index: 1;
+}
+
+
+.right_page {
+    display: inline-block;
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.fa-circle-arrow-right {
+    color: transparent;
+    /* color: black; */
+}
+.fa-circle-arrow-right:hover {
+    color: rgba(0, 0, 0, 0.429);
+    transition: all 0.5s ease-in-out;
+}
